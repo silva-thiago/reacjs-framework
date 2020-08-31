@@ -1,24 +1,35 @@
 import React from 'react'
-import Head from 'next/head'
+
+import PageHead from '@/components/PageHead'
+
+import { Greeting, Baseboard } from '@/styles/pages/Home'
 
 import Logo from '../assets/earth.svg'
 
 const Home: React.FC = () => {
   return (
     <div className='app'>
-      <Head>
-        <title>Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <PageHead title='Home' />
       <nav>
-        <Logo />
-        <span>Brand</span>
+        <div className='container'>
+          <Logo />
+          <span>Brand</span>
+        </div>
       </nav>
+      <header>
+        <div className='container'>
+          <p>Header</p>
+        </div>
+      </header>
       <main>
-        <p>Hello, World!</p>
+        <div className='container'>
+          <Greeting>Hello, World!</Greeting>
+        </div>
       </main>
       <footer>
-        <p>Proudly powered by {'Thiago Silva'}</p>
+        <Baseboard>
+          <p>Proudly powered by {'Thiago Silva'}</p>
+        </Baseboard>
       </footer>
     </div>
   )
