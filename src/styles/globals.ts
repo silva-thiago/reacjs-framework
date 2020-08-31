@@ -56,17 +56,22 @@ export default createGlobalStyle`
     list-style: none
   }
 
-  .text-muted {
-    opacity: .75
-  }
-
   main {
     flex-shrink: 0;
+  }
 
-    @include for-size(phone-only) {
-      .container {
-        padding-bottom: 4rem
-      }
-    }
+  .container {
+    margin: auto;
+    max-width: 768px;
+    padding: 1rem 0;
+    width: 90vw;
+
+    @include for-size(phone-only) { max-width: 520px; }
+    @include for-size(tablet-portrait-up) { max-width: 520px; }
+    @include for-size(tablet-landscape-up) { max-width: 768px; }
+    @include for-size(laptop-up) { max-width: 768px; }
+    @include for-size(big-laptop-up) { max-width: 768px; }
+    @include for-size(desktop-up) { max-width: 768px; }
+    @include for-size(screen-up) { max-width: 768px; }
   }
 `
