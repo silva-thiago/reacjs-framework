@@ -2,7 +2,7 @@ import React from 'react'
 
 import PageHead from '@/components/PageHead'
 
-import { Greeting, Baseboard } from '@/styles/pages/Home'
+import { Greeting, Footer } from '@/styles/pages/Home'
 
 import Logo from '../assets/earth.svg'
 
@@ -10,13 +10,13 @@ const Home: React.FC = () => {
   return (
     <div className='app'>
       <PageHead title='Home' />
-      <nav>
-        <div className='container'>
-          <Logo />
-          <span>Brand</span>
-        </div>
-      </nav>
       <header>
+        <nav>
+          <div className='container'>
+            <Logo />
+            <span>Brand</span>
+          </div>
+        </nav>
         <div className='container'>
           <p>Header</p>
         </div>
@@ -26,11 +26,11 @@ const Home: React.FC = () => {
           <Greeting>Hello, World!</Greeting>
         </div>
       </main>
-      <footer>
-        <Baseboard>
+      <Footer>
+        <div className='container'>
           <p>Proudly powered by {'Thiago Silva'}</p>
-        </Baseboard>
-      </footer>
+        </div>
+      </Footer>
     </div>
   )
 }
