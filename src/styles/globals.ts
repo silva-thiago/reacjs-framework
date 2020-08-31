@@ -40,38 +40,38 @@ export default createGlobalStyle`
       border-radius: .5rem;
       background: #1a202c
     }
-  }
 
-  .app {
-    display: grid;
-    grid-template-rows: auto 1fr auto
-  }
+    .app {
+      display: grid;
+      grid-template-rows: auto 1fr auto
+    }
 
-  a {
-    color: inherit;
-    text-decoration: none
-  }
+    a {
+      color: inherit;
+      text-decoration: none
+    }
 
-  ol, ul {
-    list-style: none
-  }
+    ol, ul {
+      list-style: none
+    }
 
-  main {
-    flex-shrink: 0;
-  }
+    main {
+      flex-shrink: 0;
+    }
 
-  .container {
-    margin: auto;
-    max-width: 768px;
-    padding: 1rem 0;
-    width: 90vw;
+    .container {
+      margin: auto;
+      max-width: 768px;
+      padding: 1rem 0;
+      width: 90vw;
 
-    @include for-size(phone-only) { max-width: 520px; }
-    @include for-size(tablet-portrait-up) { max-width: 520px; }
-    @include for-size(tablet-landscape-up) { max-width: 768px; }
-    @include for-size(laptop-up) { max-width: 768px; }
-    @include for-size(big-laptop-up) { max-width: 768px; }
-    @include for-size(desktop-up) { max-width: 768px; }
-    @include for-size(screen-up) { max-width: 768px; }
+      @include for-size(phone-only) { max-width: 520px; }
+      @include for-size(tablet-portrait-up) { max-width: 520px; }
+      @include for-size(tablet-landscape-up) { max-width: 768px; }
+      @include for-size(laptop-up) { max-width: 768px; }
+      @include for-size(big-laptop-up) { max-width: 768px; }
+      @include for-size(desktop-up) { max-width: 768px; }
+      @include for-size(screen-up) { max-width: 768px; }
+    }
   }
 `
